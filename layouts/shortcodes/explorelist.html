@@ -1,0 +1,9 @@
+<dl>
+    {{ range $.Page.Data.Pages }}
+    <dt><a href="{{ .Permalink }}">{{ .Title }}</a></dt>
+    <dd>
+       {{ .Description }}
+    </dd>
+    {{ end }}
+  </dl>
+    

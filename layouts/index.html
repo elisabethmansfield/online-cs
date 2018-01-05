@@ -1,0 +1,16 @@
+{{ partial "head" . }}
+<ul class="list-group">
+  {{ range .Site.Sections }}
+    {{ if eq .Title "Syllabus" }}
+    <li class="list-group-item">
+      <a href="{{ .Permalink }}">{{ .Title }}</a> &#8211; {{ .Description }}
+    </li>
+    {{ end }}
+  {{ end }}
+  {{ range .Site.Taxonomies.categories.module }}
+  <li class="list-group-item">
+    <a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> &#8211; {{ .Page.Description }}
+  </li>
+  {{ end }}
+</ul>
+{{ partial "foot" . }} 
