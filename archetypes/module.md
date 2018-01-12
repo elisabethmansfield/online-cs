@@ -4,13 +4,11 @@ description: ""
 categories: ["Module"]
 ---
 
-
-# TITLE OF YOU PAGE HERE!
+{{< title >}}
 ## Introduction
 <!--- Introduce the topic in this section -->
 
 ## Key Questions
-
 <!--- List  key questions
 - Key question 1
 - Key question 2
