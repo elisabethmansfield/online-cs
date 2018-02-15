@@ -7,10 +7,10 @@
     </li>
     {{ end }}
   {{ end }}
-  {{ range .Site.Taxonomies.categories.module }}
+  {{ range sort  .Site.Taxonomies.categories.module "Page.Weight" }}
   <li class="list-group-item">
     <a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> &#8211; {{ .Page.Description }}
   </li>
   {{ end }}
 </ul>
-{{ partial "foot" . }} 
+{{ partial "foot" . }}
